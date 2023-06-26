@@ -1,6 +1,9 @@
-build:
-  docker:
-    web: Dockerfile
-    worker: Dockerfile
+services:
+  build:
+    docker:
+      web: Dockerfile
+  ports:
+    - 3000:3000
+   
 
     
